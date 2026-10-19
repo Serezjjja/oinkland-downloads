@@ -8,6 +8,7 @@ import os
 import pathlib
 import re
 import tempfile
+import sys
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -203,9 +204,11 @@ def synchronize(github):
 
 
 def main():
-    if os.environ.get('GITHUB_REPOSITORY') != REPOSITORY:
+    payload = json.load(sys.stdin) if sys.argv[1:] == ['--token-stdin'] else None
+    repository = payload.get('repository') if payload else os.environ.get('GITHUB_REPOSITORY')
+    if repository != REPOSITORY:
         raise ValueError('This job is restricted to the public OinkLand downloads repository')
-    github = GitHub(os.environ.get('GITHUB_TOKEN'))
+    github = GitHub(payload.get('token') if payload else os.environ.get('GITHUB_TOKEN'))
     try:
         synchronize(github)
     finally:
