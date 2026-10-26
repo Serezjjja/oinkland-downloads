@@ -10,6 +10,7 @@ on:
       - '.github/workflows/sync.yml'
       - 'scripts/**'
       - 'tests/**'
+      - 'publication-request.json'
 
 permissions: {}
 
