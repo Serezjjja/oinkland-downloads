@@ -1,0 +1,24 @@
+{
+  "version": "15.0.1",
+  "buildNumber": 40,
+  "loadlist": [
+    {
+      "name": "OinkLand",
+      "type": "Legacy",
+      "checkPNG": true,
+      "skin": "https://raw.githubusercontent.com/Serezjjja/oinkland-downloads/player-textures/skins/{USERNAME}.png",
+      "model": "auto",
+      "cape": "https://raw.githubusercontent.com/Serezjjja/oinkland-downloads/player-textures/capes/{USERNAME}.png"
+    }
+  ],
+  "enableTransparentSkin": true,
+  "forceLoadAllTextures": false,
+  "enableCape": true,
+  "threadPoolSize": 8,
+  "enableLogStdOut": false,
+  "cacheExpiry": 15,
+  "forceUpdateSkull": false,
+  "enableLocalProfileCache": false,
+  "enableCacheAutoClean": false,
+  "forceDisableCache": false
+}

@@ -1,0 +1,18 @@
+#Define the range multiplier for the Cat's Aura Enchantment
+# Default: 2.0
+# Range: 1.0 ~ 4.0
+cats_aura_range_amplifier = 2.0
+#Define the rate of dressed mobs that can spawn
+# Default: 0.125
+# Range: 0.0 ~ 1.0
+dressed_mobs_spawn_rate = 0.125
+#Drop rate for dressed mobs
+# Default: 0.25
+# Range: 0.0 ~ 1.0
+drop_rate_dressed_mobs = 0.25
+#Spawn rate for buildings
+# Default: 125
+# Range: 0 ~ 1000
+structure_weight = 125
+#Should add trades for villagers ?
+should_add_trades = true

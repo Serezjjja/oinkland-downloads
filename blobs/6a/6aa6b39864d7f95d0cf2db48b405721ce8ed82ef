@@ -1,0 +1,9 @@
+[Features]
+	#Should placeable tooltips be enabled?
+	Tooltips = true
+	#Should the item display tooltip be enabled?
+	Display-Tooltip = true
+	#The rotation of the item display.
+	# Default: 45
+	# Range: 5 ~ 90
+	Display-Rotation = 45
